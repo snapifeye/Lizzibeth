@@ -1,0 +1,250 @@
+<html>
+	<head>
+
+		<!-- Meta
+================================================== -->
+
+<!--Twitter Meta-->
+<meta name="twitter:card" content="photo" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:URL" content="http://events.snapifeye.com/Snapifeye/"/>
+<meta property="og:title" content="Snapifeye Display Widget"/>
+<meta property="og:type" content="article"/>
+<meta property="og:image" content="http://i0.wp.com/www.snapifeye.com/wp-content/uploads/2014/10/WebHero21.png?resize=1024%2C370"/>
+<meta property="og:description"        content="Social Media Management for Onsite Event Promotions! Bridge the Gap Between your Events and Social Media." />
+<meta property="article:author"        content="Snapifeye" />
+<meta property="article:publisher"     content="Snapifeye" />
+
+
+<!-- Meta / End -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+		<link rel="stylesheet" href="css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Ruda:400,700' rel='stylesheet' type='text/css'>
+
+		<style>
+		html,body {
+			font-family: 'Ruda', sans-serif;
+			font-size: 40px;
+			font-size: 40px;
+			float:left;
+			color:black;
+			line-height:45px;
+			Background:url("http://www.kinksarethenewpink.com/wp-content/uploads/2014/06/blogger-bazaar-lizzibeth3.jpg")
+			}
+
+
+			.instaslider-nav .prev{
+				display:none;
+
+			}
+
+			.instaslider-nav .next{
+				display:none;
+			}
+
+			.myslider{
+				position:absolute;
+				right:75px;
+				top:50px;
+				}
+
+			.instaslider-wrapper{
+				float:right;
+					}
+
+			.instaslider-wrapper ul li img{
+				float:right;
+				}
+
+				#rokkin{
+					background-color: #989898;
+					height: 100vh;
+					width: 100vw;
+					padding: 0;
+					margin: 0;
+					overflow: hidden;
+					position: fixed;
+					z-index: 1;
+					top: 0;
+					left: 0;
+				}
+
+				.content{
+					background: transparent;
+					z-index:2;
+					width: 100vw;
+					min-height: 100vh;
+					position: relative;
+					margin: 0;
+					margin-top: 12vh;
+					padding: 0;
+				}
+
+				#image{
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+					margin-top: 100px;
+				}
+
+				h1 {
+					position: absolute;
+					top: 25px;
+				}
+
+				p{
+					position: absolute;
+					top: 150px;
+					left:15px;
+				}
+
+				#phone{
+								position: absolute;
+								top: 300px !important;
+								left:0px;
+								height:auto;
+								width:40%;
+							}
+
+
+//RESPONSIVE STYLE//
+
+			@media (max-width: 999px){
+				.thinger{
+					position:absolute;
+					top:600px;
+
+					}
+
+				@media (max-width: 659px){
+
+
+					.myslider{
+						width:300px;
+						height:auto;
+						}
+
+					.instaslider-wrapper{
+						width:300px;
+						height:auto;
+						}
+
+					 .instaslider-wrapper ul li img{
+						width:300px;
+						height:auto;
+					}
+}
+
+				@media (max-width: 569px){
+
+					.myslider{
+						width:250px;
+						height:auto;
+
+						}
+
+					.instaslider-wrapper{
+						width:250px;
+						height:auto;
+						}
+
+					.instaslider-wrapper ul li img{
+						width:250px;
+						height:auto;
+						}
+
+				}
+
+				@media (max-width: 479px){
+
+					.myslider{
+						width:200px !important;
+						height:auto;
+
+						}
+
+					.instaslider-wrapper{
+						width:200px;
+						height:auto;
+						}
+
+					.instaslider-wrapper ul li img{
+
+						}}
+
+				}
+
+
+</style>
+
+
+		<script>
+
+		 function autoRefresh()
+		{
+			window.location = window.location.href;
+		}
+
+		 setInterval('autoRefresh()', 60000); // this will reload page after every 2 minutes;
+		</script>
+
+	</head>
+	<body>
+
+
+<div class="content">
+
+<div class="col-md-12" style="background:transparent;padding:25px;">
+<h1>Use <FONT COLOR="24d8db">#Lizzibeth</FONT> on Instagram <br>to See Your Photos Here</h1></row>
+<div class="row" style="padding: 50px 0px;align:left !important;"><p> Find us on social <br><a href="https://instagram.com/shoplizzibeth/"><FONT COLOR="24d8db">@shoplizzibeth</a> </FONT></p>
+<div class="myslider"></div>
+</div>
+<img id="phone" src="img/lizzibethLogoMain.png" />
+</div>
+</h1></row>
+
+
+		<div class="col-md-6">
+			<script src="js/jquery.js"></script>
+			<script src="js/instaslider.jquery.js"></script>
+			<script>
+
+				$('.myslider').instaSlider({
+					clientID: 'a164a0f6607c4aca9e0e4dff13937277',
+					access_token: '721386715.a164a0f.a42f9e7d19904a9db685ac18bf29cdcb',
+					search: 'Lizzibeth',
+					auto: true,
+					limit:12,
+					Delay: 0,
+				});
+
+
+			</script>
+			</div class="col-md-6">
+</div>
+</div>
+
+
+
+<script src="js/jquery.stellar.min.js">
+</script>
+<script type="text/javascript">
+	$.stellar();
+
+
+
+</script>
+
+	</body>
+</html>
